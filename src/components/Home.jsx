@@ -28,7 +28,7 @@ export function Home() {
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link to="/sobre-o-jogo">
+          <Link to="/instrucoes">
             <button className="cursor-pointer bg-purple-600 dark:bg-[#7F67BC] dark:hover:bg-purple-200 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105">
               Explore o Projeto
             </button>
