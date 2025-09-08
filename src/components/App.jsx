@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './Header';
-import { Home } from './Home';
+import { Home } from '../pages/Home';
 import { Footer } from './Footer';
-import { SobreNos }  from './SobreNos';
-import { SobreOJogo } from "./SobreOJogo";
-import { Referencias } from "./Referencias";
-import { Produto } from "./Produto";
-import { Instrucoes } from "./Instrucoes";
+import { SobreNos }  from '../pages/SobreNos';
+import { SobreOJogo } from "../pages/SobreOJogo";
+import { Referencias } from "../pages/Referencias";
+import { Produto } from "../pages/Produto";
+import { Instrucoes } from "../pages/Instrucoes";
 
 export function App() {
   return (
