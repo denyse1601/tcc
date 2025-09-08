@@ -1,0 +1,64 @@
+import React from "react";
+
+export function Instrucoes() {
+  return (
+    <div className="min-h-screen bg-[#7F67BC] flex flex-col text-[#451A5D] dark:bg-[#451A5D] dark:text-white pt-24 md:pt-32 transition-colors duration-500">
+      <section className="px-4 md:px-8 py-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-[#B2009A] dark:text-[#FF73EC]">
+          INSTRUÇÕES
+        </h2>
+      </section>
+
+      <section className="px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl font-bold mb-4">O que é o projeto?</h3>
+          <p className="text-base leading-relaxed">
+            Um relógio inteligente físico com LEDs coloridos que indicam o que a
+            criança deve fazer em determinados momentos do dia. O relógio é
+            controlado via Bluetooth por um app simples no celular. Esse é só o
+            começo da nossa jornada!
+          </p>
+        </div>
+        <div className="bg-purple-200 h-64 rounded-lg"></div>
+      </section>
+
+      <section className="px-4 md:px-8 py-10">
+        <h3 className="text-2xl font-bold mb-4">Como funciona?</h3>
+        <p className="text-base leading-relaxed max-w-7xl">
+          O Mini Semáforo Bluetooth é um relógio inteligente físico que utiliza
+          um Arduino com três LEDs coloridos: verde, amarelo e vermelho. Ele é
+          controlado por um aplicativo no celular que se conecta ao relógio por
+          Bluetooth. Quando o responsável toca em um botão no app, o comando é
+          enviado ao relógio, que acende o LED correspondente. A luz verde
+          indica que a criança está em tempo livre, a amarela que é hora de se
+          preparar, e a vermelha que é momento de fazer uma tarefa. Dessa forma,
+          a criança acompanha sua rotina de forma visual e simples, apenas
+          observando as luzes acesas no relógio.
+        </p>
+      </section>
+
+      <section className="roxo-transparente px-4 md:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+          <p className="font-bold">1</p>
+          <p className="text-sm mt-2">
+            Protótipo do relógio montado com Arduino, LEDs e HC-05
+          </p>
+        </div>
+        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+          <p className="font-bold">2</p>
+          <p className="text-sm mt-2">Celular Android com Bluetooth ativado</p>
+        </div>
+        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+          <p className="font-bold">3</p>
+          <p className="text-sm mt-2">App instalado no celular</p>
+        </div>
+        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+          <p className="font-bold">4</p>
+          <p className="text-sm mt-2">
+            Código carregado no Arduino para interpretar os comandos recebidos
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
