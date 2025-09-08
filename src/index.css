@@ -7,18 +7,14 @@
       font-family: "Kumbh Sans";
     }
   }
-
-/* Telas grandes (desktops) */
+  
 @media (min-width: 1024px) {
-  /* Adicione seus estilos para telas grandes aqui */
 }
 
-/* Telas médias (tablets) */
+
 @media (max-width: 1023px) and (min-width: 768px) {
-  /* Adicione seus estilos para tablets aqui */
 }
 
-/* Telas pequenas (celulares) */
 @media (max-width: 767px) {
-  /* Adicione seus estilos para celulares aqui */
+
 }

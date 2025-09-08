@@ -10,7 +10,6 @@ export function SobreOJogo() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
       }}
     >
       <div className="max-w-6xl mx-auto">
