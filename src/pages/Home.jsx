@@ -16,7 +16,7 @@ export function Home() {
       <div className="max-w-6xl mx-auto">
 
         <h1
-          className="text-4xl md:text-5xl font-semibold text-[#dbbdff] dark:text-[#be7eff] mb-6"
+          className="text-4xl md:text-5xl font-semibold text-[#dbbdff] dark:text-[#be7eff] mt-20 mb-6"
           style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}
         >
           Sua nova experiência começa aqui
@@ -43,7 +43,7 @@ export function Home() {
      
         <div className="mt-24 md:mt-32 text-left">
           <h2 
-            className="text-3xl md:text-4xl font-semibold text-[#dbbdff] dark:text-[#be7eff] mb-10 text-center"
+            className="text-3xl md:text-4xl font-semibold text-[#dbbdff] dark:text-[#be7eff] mb-10 mt-20"
             style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}
           >
             Explore um Mundo de Possibilidades

@@ -11,7 +11,7 @@ import { Instrucoes } from "../pages/Instrucoes";
 export function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col bg-[#7F67BC] dark:bg-[#451A5D] transition-colors duration-500">
+      <div className="min-h-screen flex flex-col bg-[#B3A4D8] dark:bg-[#451A5D] transition-colors duration-500">
         <Header />
         <div className="flex-1">
           <Routes>

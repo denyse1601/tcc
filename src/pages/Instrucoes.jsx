@@ -2,9 +2,9 @@ import React from "react";
 
 export function Instrucoes() {
   return (
-    <div className="min-h-screen bg-[#7F67BC] flex flex-col text-[#451A5D] dark:bg-[#451A5D] dark:text-white pt-24 md:pt-32 transition-colors duration-500">
+    <div className="min-h-screen bg-[#B3A4D8] flex flex-col text-[#451A5D] dark:bg-[#451A5D] dark:text-white pt-24 md:pt-32 transition-colors duration-500">
       <section className="px-4 md:px-8 py-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-[#B2009A] dark:text-[#FF73EC]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-[#B2009A] dark:text-[#FF73EC] mt-20">
           INSTRUÇÕES
         </h2>
       </section>
@@ -38,21 +38,21 @@ export function Instrucoes() {
       </section>
 
       <section className="roxo-transparente px-4 md:px-8 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+        <div className="dark:bg-white bg-gray-400 dark:text-purple-900  text-white rounded-lg shadow-lg p-6">
           <p className="font-bold">1</p>
           <p className="text-sm mt-2">
             Protótipo do relógio montado com Arduino, LEDs e HC-05
           </p>
         </div>
-        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+        <div className="dark:bg-white bg-gray-400 dark:text-purple-900  text-white rounded-lg shadow-lg p-6">
           <p className="font-bold">2</p>
           <p className="text-sm mt-2">Celular Android com Bluetooth ativado</p>
         </div>
-        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+        <div className="dark:bg-white bg-gray-400 dark:text-purple-900  text-white rounded-lg shadow-lg p-6">
           <p className="font-bold">3</p>
           <p className="text-sm mt-2">App instalado no celular</p>
         </div>
-        <div className="bg-white dark:bg-gray-800 text-purple-900 dark:text-white rounded-lg shadow-lg p-6">
+        <div className="dark:bg-white bg-gray-400 dark:text-purple-900 text-white rounded-lg shadow-lg p-6">
           <p className="font-bold">4</p>
           <p className="text-sm mt-2">
             Código carregado no Arduino para interpretar os comandos recebidos

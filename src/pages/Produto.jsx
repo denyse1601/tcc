@@ -19,11 +19,11 @@ export function Produto() {
   ];
 
   return (
-    <main className="bg-[#7F67BC] dark:bg-[#451A5D] flex flex-col justify-center min-h-screen p-4 md:p-6 dark:text-white text-[#451A5D] pt-24 md:pt-32">
+    <main className="bg-[#B3A4D8] dark:bg-[#451A5D] flex flex-col justify-center min-h-screen p-4 md:p-6 dark:text-white text-[#451A5D] pt-24 md:pt-32">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-[#B2009A] dark:text-[#FF73EC]">PRODUTO</h1>
-        <p className="max-w-2xl mx-auto mb-12 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-          Apresentamos os materiais usados para construir nosso protótipo, seus custos e o resultado final. Veja como a tecnologia pode ser aplicada de forma criativa e eficiente para dar vida a um projeto inovador.
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-[#B2009A] dark:text-[#FF73EC] mt-20">PRODUTO</h1>
+        <p className="max-w-4xl mx-auto mb-12 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
+        Nesta página, apresentamos todos os materiais utilizados para a construção do protótipo do relógio inteligente, junto com seus respectivos valores. Além disso, mostramos o resultado final do projeto, destacando seu funcionamento e como ele cumpre o objetivo proposto de auxiliar na organização da rotina infantil por meio de sinais visuais. Esta etapa permite entender os custos envolvidos e visualizar como o produto foi finalizado na prática.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">

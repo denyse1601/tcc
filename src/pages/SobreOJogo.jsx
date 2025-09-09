@@ -13,7 +13,7 @@ export function SobreOJogo() {
       }}
     >
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-center text-[#B2009A] dark:text-[#FF73EC]">JOGO</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-10 text-center text-[#B2009A] dark:text-[#FF73EC] mt-20">JOGO</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
