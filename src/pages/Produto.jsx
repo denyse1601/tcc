@@ -5,6 +5,7 @@ import ProtoboardImage from '../assets/Protoboard.png';
 import JumpersImage from '../assets/Jumpers.png';
 import CaboUsbImage from '../assets/cabo-usb.png';
 import LcdImage from '../assets/lcd.png';
+import PrototipoImage from '../assets/protótipo.png';
 
 export function Produto() {
   const produtos = [
@@ -23,7 +24,7 @@ export function Produto() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 text-[#B2009A] dark:text-[#FF73EC] mt-20">PRODUTO</h1>
         <p className="max-w-4xl mx-auto mb-12 text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-        Nesta página, apresentamos todos os materiais utilizados para a construção do protótipo do relógio inteligente, junto com seus respectivos valores. Além disso, mostramos o resultado final do projeto, destacando seu funcionamento e como ele cumpre o objetivo proposto de auxiliar na organização da rotina infantil por meio de sinais visuais. Esta etapa permite entender os custos envolvidos e visualizar como o produto foi finalizado na prática.
+        Nesta página, detalhamos todos os componentes e materiais empregados na construção do nosso protótipo de relógio inteligente. Apresentamos uma lista completa, desde a placa Arduino até os LEDs e sensores, com os respectivos custos estimados de cada item. O objetivo é oferecer uma visão transparente sobre o investimento necessário para a montagem do hardware. Além disso, exibimos o resultado final do projeto, um dispositivo funcional que cumpre a missão de auxiliar na organização da rotina infantil por meio de sinais visuais e alertas sonoros. Ao explorar esta seção, você poderá compreender não apenas os custos envolvidos, mas também visualizar a aparência e a montagem do produto, entendendo como a tecnologia foi aplicada de forma prática e criativa para dar vida à nossa solução.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
@@ -47,9 +48,9 @@ export function Produto() {
           ))}
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-8 rounded-lg border border-white/20 max-w-4xl mx-auto">
-          <h2 className="font-bold text-2xl sm:text-3xl text-[#B2009A] dark:text-[#FF73EC] mb-4">Resultado Final</h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center">
+        <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-8 rounded-lg border border-white/20 max-w-4xl mx-auto mb-12">
+          <h2 className="font-bold text-2xl sm:text-3xl text-[#B2009A] dark:text-[#FF73EC] mb-6">Resultado Final</h2>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-6">
             O protótipo final é um sistema inteligente funcional, composto por uma caixa com LEDs coloridos controlados por um aplicativo de celular via conexão Bluetooth. O funcionamento e a montagem foram cuidadosamente pensados para demonstrar a viabilidade prática do projeto, mostrando como a tecnologia pode ser aplicada de maneira criativa e eficiente.
           </p>
           <p className="font-semibold text-sm sm:text-base md:text-lg text-center">
@@ -58,6 +59,10 @@ export function Produto() {
           <p className="text-gray-200 dark:text-gray-400 text-xs sm:text-sm mt-2 text-center">
             (Valores de estimativa média com base em lojas online.)
           </p>
+        </div>
+
+        <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-8 rounded-lg border border-white/20 max-w-4xl mx-auto">
+          <img src={PrototipoImage} alt="Protótipo do projeto" className="w-1/2 h-auto rounded-lg mx-auto" />
         </div>
       </div>
     </main>

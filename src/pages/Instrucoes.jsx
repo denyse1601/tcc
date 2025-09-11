@@ -52,7 +52,7 @@ export function Instrucoes() {
           <p className="font-bold">3</p>
           <p className="text-sm mt-2">App instalado no celular</p>
         </div>
-        <div className="dark:bg-white bg-gray-400 dark:text-purple-900 text-white rounded-lg shadow-lg p-6">
+        <div className="dark:bg-white bg-gray-400 dark:text-purple-900 text-white rounded-lg shadow-lg p-6 ">
           <p className="font-bold">4</p>
           <p className="text-sm mt-2">
             Código carregado no Arduino para interpretar os comandos recebidos
