@@ -18,22 +18,31 @@ export function Header() {
     }
   }, [theme]);
 
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
-    <header className="absolute top-0 left-0 w-full p-6 flex items-center justify-between bg-transparent text-white z-50 dark:bg-transparent">
+    <header className="fixed top-0 left-0 w-full p-6 flex items-center justify-between bg-purple-700/90 text-white z-50 dark:bg-purple-900/90 backdrop-blur-sm">
  
-      <Link to="/">
+      <a href="#inicio" onClick={(e) => handleScroll(e, 'inicio')}>
         <div className="cursor-pointer md:mr-12">
           <img src={logo} alt="Logo Megan" className="h-12 w-12 md:h-16 md:w-16" />
         </div>
-      </Link>
+      </a>
 
       <nav className="hidden md:flex items-center gap-6 text-xl cursor-pointer">
-        <Link to="/"><p>Início</p></Link>
-        <Link to="/instrucoes"><p>Instruções</p></Link>
-        <Link to="/produto"><p>Produto</p></Link>
-        <Link to="/sobre-nos"><p>Sobre Nós</p></Link>
-        <Link to="/referencias"><p>Referências</p></Link>
-        <Link to="/sobre-o-jogo"><p>Jogo</p></Link>
+        <a href="#inicio" onClick={(e) => handleScroll(e, 'inicio' )}><p>Início</p></a>
+        <a href="#instrucoes" onClick={(e) => handleScroll(e, 'instrucoes' )}><p>Instruções</p></a>
+        <a href="#produto" onClick={(e) => handleScroll(e, 'produto' )}><p>Produto</p></a>
+        <a href="#sobre-nos" onClick={(e) => handleScroll(e, 'sobre-nos' )}><p>Sobre Nós</p></a>
+        <a href="#referencias" onClick={(e) => handleScroll(e, 'referencias' )}><p>Referências</p></a>
+        <a href="#sobre-o-jogo" onClick={(e) => handleScroll(e, 'sobre-o-jogo' )}><p>Jogo</p></a>
       </nav>
 
       <div className="flex items-center">
@@ -57,12 +66,12 @@ export function Header() {
 
       {isMenuOpen && (
         <nav className="absolute top-24 left-0 w-full bg-black bg-opacity-90 md:hidden flex flex-col items-center gap-6 text-xl cursor-pointer p-6">
-          <Link to="/" onClick={() => setIsMenuOpen(false)}><p>Início</p></Link>
-          <Link to="/instrucoes" onClick={() => setIsMenuOpen(false)}><p>Instruções</p></Link>
-          <Link to="/produto" onClick={() => setIsMenuOpen(false)}><p>Produto</p></Link>
-          <Link to="/sobre-nos" onClick={() => setIsMenuOpen(false)}><p>Sobre Nós</p></Link>
-          <Link to="/referencias" onClick={() => setIsMenuOpen(false)}><p>Referências</p></Link>
-          <Link to="/sobre-o-jogo" onClick={() => setIsMenuOpen(false)}><p>Jogo</p></Link>
+          <a href="#inicio" onClick={(e) => handleScroll(e, 'inicio' )}><p>Início</p></a>
+          <a href="#instrucoes" onClick={(e) => handleScroll(e, 'instrucoes' )}><p>Instruções</p></a>
+          <a href="#produto" onClick={(e) => handleScroll(e, 'produto' )}><p>Produto</p></a>
+          <a href="#sobre-nos" onClick={(e) => handleScroll(e, 'sobre-nos' )}><p>Sobre Nós</p></a>
+          <a href="#referencias" onClick={(e) => handleScroll(e, 'referencias' )}><p>Referências</p></a>
+          <a href="#sobre-o-jogo" onClick={(e) => handleScroll(e, 'sobre-o-jogo' )}><p>Jogo</p></a>
         </nav>
       )}
     </header>

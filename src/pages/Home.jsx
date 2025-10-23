@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { ArrowUp } from '@phosphor-icons/react';
 import DarkBackground from '../assets/fundo.png';
 import LightBackground from '../assets/fundo_claro.png';
 
 export function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
@@ -15,8 +16,33 @@ export function Home() {
 
     setIsDarkMode(document.documentElement.classList.contains('dark'));
 
-    return () => observer.disconnect();
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleScrollToSection = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <main
@@ -44,16 +70,16 @@ export function Home() {
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link to="/instrucoes">
+          <a href="#instrucoes" onClick={(e) => handleScrollToSection(e, 'instrucoes')}>
             <button className="cursor-pointer bg-purple-600 dark:bg-[#7F67BC] dark:hover:bg-purple-200 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105">
               Explore o Projeto
             </button>
-          </Link>
-          <Link to="/sobre-nos">
+          </a>
+          <a href="#sobre-nos" onClick={(e) => handleScrollToSection(e, 'sobre-nos')}>
             <button className="cursor-pointer bg-transparent border-2 border-purple-600 dark:border-white hover:bg-purple-900 dark:hover:bg-white hover:text-white dark:hover:text-black text-[#e1c8f7] dark:text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
               Conheça os Criadores
             </button>
-          </Link>
+          </a>
         </div>
 
      
@@ -89,6 +115,36 @@ export function Home() {
           </div>
         </div>
       </div>
+      {showBackToTop && (
+        <button
+          onClick={handleScrollToTop}
+          className="fixed bottom-10 right-10 bg-purple-600 dark:bg-[#7F67BC] text-white p-3 rounded-full shadow-lg hover:bg-purple-700 dark:hover:bg-purple-200 transition-transform transform hover:scale-110 cursor-pointer"
+          aria-label="Voltar ao topo"
+        >
+          <ArrowUp size={24} />
+        </button>
+      )}
+      <a
+        href="/app.apk"
+        download
+        className="fixed bottom-10 right-24 bg-purple-600 dark:bg-[#7F67BC] text-white p-3 rounded-full shadow-lg hover:bg-purple-700 dark:hover:bg-purple-200 transition-transform transform hover:scale-110 cursor-pointer"
+        aria-label="Download"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+          />
+        </svg>
+      </a>
     </main>
   );
 }
