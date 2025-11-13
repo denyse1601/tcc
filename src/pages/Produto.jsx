@@ -1,23 +1,22 @@
-import BluetoothImage from '../assets/bluetooth-hc05.png';
+import Cabo from '../assets/cabo.png';
 import LedsImage from '../assets/leds.png';
-import ResistoresImage from '../assets/Resistores-para-LEDs.png';
+import ResistoresImage from '../assets/resistores.png';
 import ProtoboardImage from '../assets/Protoboard.png';
 import JumpersImage from '../assets/Jumpers.png';
-import CaboUsbImage from '../assets/cabo-usb.png';
 import LcdImage from '../assets/lcd.png';
 import PrototipoImage from '../assets/protótipo.png';
 import VideoExplicando from '../assets/explicando.mp4';
+import Esp32 from '../assets/esp32.png'
 
 export function Produto() {
   const produtos = [
-    { nome: "Placa Arduino Uno", preco: "R$ 50,00", imagem: "https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" },
-    { nome: "Módulo Bluetooth HC-05", preco: "R$ 30,00", imagem: BluetoothImage },
+    { nome: "Placa Esp32 Wifi/Bluetooth", preco: "R$ 50,00", imagem: Esp32 },
+    { nome: "Cabo USB", preco: "R$ 30,00", imagem: Cabo },
     { nome: "LEDs", preco: "R$ 2,50 (cada)", imagem: LedsImage },
     { nome: "Resistores para LEDs", preco: "R$ 5,00", imagem: ResistoresImage },
     { nome: "Protoboard", preco: "R$ 15,00", imagem: ProtoboardImage },
     { nome: "Jumpers", preco: "R$ 15,00", imagem: JumpersImage },
     { nome: "Lcd", preco: "R$ 150,00", imagem: LcdImage },
-    { nome: "Cabo USB", preco: "R$ 8,00", imagem: CaboUsbImage },
   ];
 
   return (
