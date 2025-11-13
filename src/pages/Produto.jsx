@@ -7,6 +7,7 @@ import LcdImage from '../assets/lcd.png';
 import PrototipoImage from '../assets/protótipo.png';
 import VideoExplicando from '../assets/explicando.mp4';
 import Esp32 from '../assets/esp32.png'
+import Modelo3d from '../assets/modelo3d.png'
 
 export function Produto() {
   const produtos = [
@@ -17,6 +18,7 @@ export function Produto() {
     { nome: "Protoboard", preco: "R$ 15,00", imagem: ProtoboardImage },
     { nome: "Jumpers", preco: "R$ 15,00", imagem: JumpersImage },
     { nome: "Lcd", preco: "R$ 150,00", imagem: LcdImage },
+    { nome: "Modelo 3d", preco: "R$ 90,00", imagem: Modelo3d },
   ];
 
   return (
@@ -54,7 +56,7 @@ export function Produto() {
             O protótipo final é um sistema inteligente funcional, composto por uma caixa com LEDs coloridos controlados por um aplicativo de celular via conexão Bluetooth. O funcionamento e a montagem foram cuidadosamente pensados para demonstrar a viabilidade prática do projeto, mostrando como a tecnologia pode ser aplicada de maneira criativa e eficiente.
           </p>
           <p className="font-semibold text-sm sm:text-base md:text-lg text-center">
-            Valor total estimado do protótipo: <span className="text-[#B2009A] dark:text-[#FF73EC]">R$ 279,00</span>
+            Valor total estimado do protótipo: <span className="text-[#B2009A] dark:text-[#FF73EC]">R$ 350,00</span>
           </p>
           <p className="text-gray-200 dark:text-gray-400 text-xs sm:text-sm mt-2 text-center">
             (Valores de estimativa média com base em lojas online.)

@@ -1,5 +1,6 @@
 import React from "react";
 import GameBackground from '../assets/game.png';
+import jogo from '../assets/jogo.mp4';
 
 export function SobreOJogo() {
   return (
@@ -17,9 +18,11 @@ export function SobreOJogo() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-        <div className="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-300 h-64 sm:h-80 md:h-96 flex justify-center items-center rounded-lg transition-colors duration-500">
-            ▶ Vídeo
-        </div>
+        <video
+              src={jogo}
+              controls
+              className="w-full max-w-2xl h-auto rounded-xl mx-auto shadow-lg aspect-video"
+            />
 
           <div>
             <p className="text-base sm:text-lg md:text-xl font-medium whitespace-pre-wrap mb-8 text-justify">
